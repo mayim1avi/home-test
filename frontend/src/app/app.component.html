@@ -1,0 +1,23 @@
+<form class="example-form">
+<mat-form-field class="example-full-width">
+<span matPrefix> </span>
+<input 
+  matInput 
+  placeholder="Search Users" 
+  [(ngModel)]="searchTerm"
+  name="searchTerm"
+  (keyup)="searchUsers(searchTerm)">
+</mat-form-field>
+<br/>
+</form>
+
+
+
+<div class="spinner-wrapper" *ngIf="loading">  
+  <mat-spinner></mat-spinner>
+</div>
+
+<ul class="list-group">
+  <li *ngFor="let user of users" class="list-group-item">{{ user }}</li>
+  <li *ngIf="searchStart && !users.length && !loading" class="list-group-item">No Data</li>
+</ul>
