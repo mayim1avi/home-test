@@ -1,2 +1,9 @@
-After the project has been created, you can navigate to the application directory and start the docker container.
-you can do that by typing  'alias sail='bash vendor/bin/sail && sail up'. In the command line. After the container is built, you can click on the link "http://localhost:4200/", and simply type your search in the search bar.
+# User Search Form Example
+
+Steps to initialize the app.
+
+1. [Install Docker Compose](https://docs.docker.com/compose/install/)
+1. Clone this repository
+1. Run all containers with `alias sail='bash vendor/bin/sail && sail up`
+1. Open the form in your browser by clicking on the link "http://localhost:4200/"
+1. Type your search in the search input
